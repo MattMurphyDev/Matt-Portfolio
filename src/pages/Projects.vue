@@ -1,10 +1,10 @@
 <template>
     <Layout>
         <section>
-            <article v-for="post in $page.posts.edges" :key="post.title">
-                <h2>{{post.node.title}}</h2>
-                <p>{{post.node.description}}</p>
-                <a :href="post.node.path">Read More</a>
+            <article v-for="project in $page.projects.edges" :key="project.title">
+                <h2>{{project.node.title}}</h2>
+                <p>{{project.node.description}}</p>
+                <a :href="project.node.path">Read More</a>
             </article>
         </section>
     </Layout>
@@ -12,7 +12,7 @@
 
 <page-query>
 query {
-    posts: allPost {
+    projects: allProject {
         edges {
             node {
                 path
@@ -26,8 +26,8 @@ query {
 
 <script>
 export default {
-  metaInfo: {
-    title: 'Blog'
-  }
+    metaInfo: {
+        title: 'Projects'
+    }
 }
 </script>

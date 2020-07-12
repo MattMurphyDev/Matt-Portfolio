@@ -1,12 +1,12 @@
 <template>
     <Layout>
-        <div v-html="$page.post.content"></div>
+        <div v-html="$page.project.content"></div>
     </Layout>
 </template>
 
 <page-query>
-query Post ($id: ID!) {
-  post: post (id: $id) {
+query Project ($id: ID!) {
+  project: project (id: $id) {
     title
     description
     content
@@ -18,7 +18,7 @@ query Post ($id: ID!) {
 export default {
     metaInfo() {
         return {
-            title: this.$page.post.title
+            title: this.$page.project.title
         }
     }
 }

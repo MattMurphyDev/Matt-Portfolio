@@ -17,6 +17,14 @@ module.exports = {
 
         typeName: 'Post'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'projects/**/*.md',
+        resolveAbsolutePaths: true,
+        typeName: 'Project'
+      }
     }
   ],
   transformers: {
