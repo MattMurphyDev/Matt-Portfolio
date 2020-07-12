@@ -7,6 +7,7 @@
       <nav class="nav">
         <g-link class="nav__link" to="/projects">Projects</g-link>
         <g-link class="nav__link" to="/blog">Blog</g-link>
+        <g-link class="nav__link" to="/uses">Tools</g-link>
       </nav>
     </header>
     <slot/>
