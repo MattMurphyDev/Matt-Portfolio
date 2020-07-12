@@ -1,7 +1,6 @@
 ---
 title: "First Post"
 description: "First example Post"
-project: false
 ---
 
 ## First Post Heading

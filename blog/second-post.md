@@ -1,7 +1,6 @@
 ---
 title: "Second Post"
 description: "Second example Post"
-project: true
 ---
 
 ## Second Post Heading
