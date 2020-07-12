@@ -14,7 +14,6 @@ module.exports = {
       options: {
         path: 'blog/**/*.md',
         resolveAbsolutePaths: true,
-
         typeName: 'Post'
       }
     },
