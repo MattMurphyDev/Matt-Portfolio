@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <div v-html="$page.post.content"></div>
+        <main v-html="$page.post.content" class="w-full md-content flex-grow p-4"></main>
     </Layout>
 </template>
 

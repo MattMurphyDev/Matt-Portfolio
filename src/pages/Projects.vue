@@ -1,13 +1,11 @@
 <template>
-    <Layout>
-        <section>
-            <article v-for="project in $page.projects.edges" :key="project.title">
-                <h2>{{project.node.title}}</h2>
-                <p>{{project.node.description}}</p>
-                <a :href="project.node.path">Read More</a>
-            </article>
-        </section>
-    </Layout>
+  <Layout>
+    <main class="w-full flex-grow p-4">
+      <section>
+        <ProjectCard v-for="project in $page.projects.edges" :key="project.title" :info="project" />
+      </section>
+    </main>
+  </Layout>
 </template>
 
 <page-query>
@@ -25,9 +23,12 @@ query {
 </page-query>
 
 <script>
+import ProjectCard from "../components/ProjectCard";
+
 export default {
-    metaInfo: {
-        title: 'Projects'
-    }
-}
+  components: { ProjectCard },
+  metaInfo: {
+    title: "Projects"
+  }
+};
 </script>
