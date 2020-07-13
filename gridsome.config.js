@@ -8,6 +8,7 @@ module.exports = {
   siteName: 'Matt Murphy',
   siteUrl: 'https://www.mattmurphydev.com',
   siteDescription: 'Thoughts and projects of Matt Murphy',
+  icon: './src/favicon.png',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -24,6 +25,9 @@ module.exports = {
         resolveAbsolutePaths: true,
         typeName: 'Project'
       }
+    },
+    {
+      use: "gridsome-plugin-tailwindcss",
     }
   ],
   transformers: {
