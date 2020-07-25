@@ -64,45 +64,4 @@ body {
   padding: 0;
   color: #333;
 }
-
-.md-content > h1,
-.md-content > h2,
-.md-content > h3,
-.md-content > h4,
-.md-content > h5,
-.md-content > h6 {
-  font-weight: 900;
-  margin-top: 1rem;
-  margin-bottom: 0.25rem;
-}
-
-.md-content > h1 {
-  margin-top: 0;
-  font-size: 2rem;
-}
-
-.md-content > h2 {
-  font-size: 1.75rem;
-}
-
-.md-content > h3 {
-  font-size: 1.5rem;
-}
-
-.md-content > h4 {
-  font-size: 1.25rem;
-}
-
-.md-content > h5 {
-  font-size: 1.125rem;
-}
-
-.md-content > h6 {
-  font-size: 1rem;
-}
-
-.md-content > p {
-  line-height: normal;
-  font-size: 0.9rem;
-}
 </style>
